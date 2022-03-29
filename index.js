@@ -39,6 +39,6 @@ app.use("/qualification", require("./routes/qualification"));
 app.use("/template", require("./routes/template"));
 
 
-app.listen(8081, function(){
+app.listen(80, function(){
     console.log("Node Server Started");
 })
