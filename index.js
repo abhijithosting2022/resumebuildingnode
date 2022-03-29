@@ -2,7 +2,7 @@ var express = require("express");
 const mongoose = require("mongoose");
 
 var app = express();
-mongoose.connect("mongodb://localhost:27017/resumebuiling");
+mongoose.connect("mongodb+srv://abhijit:Abhijit123@cluster0.udzla.mongodb.net/test");
 const db = mongoose.connection;
 db.on("error", error=> console.log(error));
 db.on("open", ()=> console.log("Connection Established"));
