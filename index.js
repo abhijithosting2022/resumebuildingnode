@@ -38,7 +38,7 @@ app.use("/hobby", require("./routes/hobby"));
 app.use("/qualification", require("./routes/qualification"));
 app.use("/template", require("./routes/template"));
 
-
-app.listen(5000 || 8000 || 80, function(){
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function(){
     console.log("Node Server Started");
 })
